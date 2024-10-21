@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 2em;
+    margin: 0;
+}
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    columns: #333;
+}
+main{
+    padding: 20px;
+}
+#product-showcase{
+    display: grid;
+    grid-template-columns: repeat(auti-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+#modal-container{
+    position: fixed;
+    top:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1000; */
+
+}
+.modal{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.modal h2{
+    margin-bottom: 10px;
+}
+.modal form{
+    display: flex;
+    flex-direction: column;
+}
+.modal label{
+    margin-bottom: 5px;
+}
+.modal input, .modal textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.model button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.model button:hover{
+    background-color: #0069d9;
+}
+.error-message{
+    color: red;
+    margin-top: 10px;
+}
+.hidden{
+    display: none;
+}
+#cart-item{
+    list-style: none;
+    padding: 0;
+}
+#cart-item li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#cart-item li .quantity-input{
+    width: 50px;
+    text-align: center;
+}
+#cart-total{
+    font-weight: bold;
+}
+#checkout-button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#checkout-button:hover{
+    background-color: #0069d9;
+}
